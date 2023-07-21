@@ -1,0 +1,35 @@
+.navbar-bg-image {
+    background-image: url('https://images.unsplash.com/photo-1563305096-9af2877f57f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWJzdHJhY3QlMjBkYXJrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+/* Overlay nero con trasparenza del 30% */
+.navbar-bg-image {
+    position: relative;
+}
+
+.navbar-bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Scritta al centro */
+.navbar-bg-image .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif; /* Aggiunta del font "Raleway" */
+}

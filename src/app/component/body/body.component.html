@@ -1,0 +1,23 @@
+<div class="container-fluid border border-black pb-5">
+    <h2 class="text-center mb-5 mt-5">I Prodotti Disponibili</h2>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of productsChild">
+            <div class="card mb-3 bg-white border rounded" >
+                <img src="{{product.image}}" class="card-img-top" alt="Card Immagine">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">{{product.brand}}</h5>
+                    <p class="card-text">{{product.model}}</p><br>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong class="fw-bold">Sist. Operativo:</strong> {{product.operatingSystem}}</li>
+                        <li class="list-group-item"><strong class="fw-bold">Memoria:</strong> {{product.memory}}</li>
+                        <li class="list-group-item"><strong class="fw-bold">Prezzo:</strong> {{product.price}} € </li>
+                        <li class="list-group-item"><strong class="fw-bold">Caratteristiche:</strong> {{product.description}}</li>
+                      </ul>
+                      <div class="d-grid gap-2 mb-3">
+                        <a href="#" class="btn btn-danger btn-lg mt-4 mx-2">ACQUISTA ORA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
