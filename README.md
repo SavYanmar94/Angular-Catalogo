@@ -1,10 +1,22 @@
 # EsCatalogo
 
-Secondo esercizio di Angular , riprodurre un catalogo 
+Secondo esercizio di Angular : Creare una Angular Application composta da una home page che mostri dinamicamente un catalogo di prodotti in vendita.
+Tale catalogo, gestito mediante json-server (sfruttando il file products.json allegato), dovrà essere acquisito dall'applicazione mediante invocazione di apposita GET API.
+
+Per ciascun prodotto, devono essere visualizzate tutte le caratteristiche di cui allo schema predisposto e di seguito riepilogate:
 
 
+• Marca
+• Modello
+• Sistema Operativo
+• Memoria
+• Prezzo di vendita
+• Descrizione
+• Immagine
 
+Note : esercizio svolto in solitaria , html realizzato con l'ausilio di Bootstrap, logo realizzato con l'intelligenza artificiale , nome brand inventato da zero.
 
+---
 
 
 
